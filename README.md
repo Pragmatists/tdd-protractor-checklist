@@ -1,7 +1,7 @@
 Protractor checklist
 ================
 
-Kod do ćwiczeń z testami 2e2.
+Kod do ćwiczeń z testami e2e.
 
 setup
 -----
@@ -27,7 +27,7 @@ http://localhost:3000/#/checklist.
 Abyś oswoił się z testami e2e, masz przykład testów dla generatora list.
 http://localhost:3000/#/example
 
-gulp protractor -> uruchamia testy 2e2
+gulp protractor -> uruchamia testy e2e
 
 Lista zadań
 -----------
