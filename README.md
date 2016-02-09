@@ -1,4 +1,4 @@
-Protractor checklist.
+Protractor checklist
 ================
 
 Kod do ćwiczeń z testami 2e2.
