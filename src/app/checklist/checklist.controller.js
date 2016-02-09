@@ -3,17 +3,16 @@ angular.module('tdd')
 
         var vm = this;
         vm.list = [
-            {name : 'Clean the dishesh', isDone : false, type: 'work'},
-            {name : 'Go to work.', isDone : false, type: 'home'},
-            {name : 'Do things.', isDone : true, type: 'private'}
+            {name : 'Clean the dishesh', isDone : false},
+            {name : 'Go to work.', isDone : false},
+            {name : 'Do things.', isDone : true}
         ];
-        vm.types = ['work', 'home', 'private'];
 
         vm.addTask = addTask;
         vm.clearDone = clearDone;
 
-        function addTask(name, type) {
-            vm.list.push({name : name, isDone : false, type: type});
+        function addTask(name) {
+            vm.list.push({name : name, isDone : false});
         }
 
         function clearDone() {

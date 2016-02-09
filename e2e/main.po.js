@@ -14,4 +14,5 @@ var MainPage = function() {
   this.listElem = element.all(by.css('li'));
 };
 
+
 module.exports = new MainPage();

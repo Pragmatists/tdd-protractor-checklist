@@ -4,28 +4,17 @@
     <form class="form-signin">
         <input ng-model="checklist.name" type="text" id="name" class="form-control" placeholder="Name of Your task" required=""
                autofocus="">
-        <select required ="" class="form-control" id="taskType" ng-model="checklist.type"
-                ng-options="type as type for type in checklist.types"
-                ng-init="somethingHere = options[0]">
-        </select>
         <button class="btn btn-lg btn-primary btn-block generator" type="submit"
-                ng-click="checklist.addTask(checklist.name, checklist.type)">Add task
+                ng-click="checklist.addTask(checklist.name)">Add task
         </button>
     </form>
 
     <div class="checklist" ng-if="checklist.list">
-        <span>Filter by:<span>
-        <select class="form-control filter-select" id="filter" ng-model="checklist.filterBy"
-                ng-options="type as type for type in checklist.types">>
-        </select>
+        <h3>Tasks list:</h3>
         <ul class="list-group">
-            <li ng-repeat="item in checklist.list | filter:{ type: checklist.filterBy }" class="list-group-item">
-                <span class="type"
-                      ng-class="{'work': item.type === 'work', 'private': item.type === 'private', 'home': item.type === 'home'}"
-                >{{item.type}}</span>
+            <li ng-repeat="item in checklist.list" class="list-group-item">
                 <span class="name" ng-class="{'done': item.isDone}">{{item.name}}</span>
-                <input type="checkbox"
-                       ng-model="item.isDone">
+                <input type="checkbox" ng-model="item.isDone">
             </li>
         </ul>
     </div>
