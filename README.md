@@ -1,7 +1,7 @@
-Smelly hangman
+Protractor checklist.
 ================
 
-Kod do ćwiczenia z code smells i refactoringu
+Kod do ćwiczeń z testami 2e2.
 
 setup
 -----
