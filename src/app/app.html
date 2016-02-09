@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Aloha! Try me.</h1>
+    <form class="form-signin">
+        <input ng-model="app.name" type="text" id="name" class="form-control" placeholder="Type any name" required=""
+               autofocus="">
+        <input ng-model="app.count" type="number" id="count" class="form-control" placeholder="Type number between 1 and 10"
+               required="" max=10 min=1 autofocus="">
+        <button class="btn btn-lg btn-primary btn-block generator" type="submit" ng-click="app.generate(app.name, app.count)">Generate
+        </button>
+    </form>
+    <div class="generated-list" ng-if="app.list">
+        <h2>Here is Your generated list {{app.name}}:</h2>
+        <ul class="list-group">
+            <li ng-class="{'first': $first}" ng-repeat="item in app.list" class="list-group-item">{{item}}</li>
+        </ul>
+    </div>
+</div>
