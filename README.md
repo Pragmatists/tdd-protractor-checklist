@@ -40,9 +40,9 @@ Lista zadań
 * Dodanie odpowiedniej klasy dla tekstu - kiedy zadanie jest wykonany.
 
 **Stwórz nową funkcjonalność na następnie odpowiednio przetestuj:**
-*Jako użytkownik chcę możliwość wyboru typu zadania.[work, private, home]
-*Jako użytkownik chcę mieć możliwość filtrowania zadań przez jego typ.
-*Chcę aby na liście zadań pojawiłą się rozróżnienie na typy -> mock.jpg
+* Jako użytkownik chcę możliwość wyboru typu zadania.[work, private, home]
+* Jako użytkownik chcę mieć możliwość filtrowania zadań przez jego typ.
+* Chcę aby na liście zadań pojawiłą się rozróżnienie na typy -> mock.jpg
 
 
 
