@@ -1,5 +1,5 @@
 angular.module('tdd')
-  .controller('AppController', function () {
+  .controller('ListGeneratorController', function () {
     var vm = this;
 
     vm.generate = generate;

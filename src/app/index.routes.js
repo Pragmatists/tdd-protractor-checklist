@@ -7,10 +7,10 @@
 
             $stateProvider
                 .state('app', {
-                    url          : '/example',
-                    templateUrl : 'app/app.html',
+                  url: '/list-generator',
+                  templateUrl: 'app/listGenerator.html',
                     controllerAs : 'app',
-                    controller   : 'AppController'
+                  controller: 'ListGeneratorController'
                 })
                 .state('exercise', {
                     url          : '/checklist',
@@ -19,7 +19,7 @@
                     controller   : 'ChecklistController'
                 });
 
-            $urlRouterProvider.otherwise('/example');
+          $urlRouterProvider.otherwise('/list-generator');
 
         });
 
