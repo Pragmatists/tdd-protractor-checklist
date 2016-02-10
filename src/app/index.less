@@ -40,6 +40,33 @@ float: right;
 .done {
   text-decoration: line-through;
 }
+.checklist {
+  position: relative;
+  .name {
+    position: absolute;
+    left:80px;
+  }
+  .type{
+    width: 45px;
+    text-align: center;
+    display: inline-block;
+    padding: 2px;
+    border-radius: 3px;
+    &.work{
+      background-color: #2aabd2;
+    }
+    &.private{
+      background-color: #eea236;
+    }
+    &.home{
+      background-color: forestgreen;
+    }
+  }
+  .filter-select {
+    width:200px;
+    display: inline-block;
+  }
+}
 
 
 /**
