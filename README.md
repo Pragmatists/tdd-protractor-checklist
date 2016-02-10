@@ -31,7 +31,7 @@ gulp protractor -> uruchamia testy e2e
 Lista zadań
 -----------
 **Przeanalizuj testy** dla http://localhost:3000/#/example
-*Zwróć szczególna uwagę na matchers.js.
+* Zwróć szczególna uwagę na matchers.js.
 
 **Napisz testy sprawdzające:** dla http://localhost:3000/#/checklist
 * Poprawnie dodawanie zadań.
@@ -39,9 +39,9 @@ Lista zadań
 * Zaznaczanie zadania jako wykonane.
 * Dodanie odpowiedniej klasy dla tekstu - kiedy zadanie jest wykonany.
 
-**Stwórz nową funkcjonalność na następnie odpowiednio przetestuj:**
-* Jako użytkownik chcę możliwość wyboru typu zadania.[work, private, home]
-* Jako użytkownik chcę mieć możliwość filtrowania zadań przez jego typ.
+**Stwórz nową funkcjonalność, a na następnie odpowiednio przetestuj:**
+* Jako użytkownik chcę możliwość wyboru typu zadania z work, home, private.
+* Jako użytkownik chcę mieć możliwość filtrowania zadań po typie.
 * Chcę aby na liście zadań pojawiłą się rozróżnienie na typy -> mock.jpg
 
 
