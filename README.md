@@ -23,26 +23,28 @@ Some of most useful commands are:
 
 W tym ćwiczeniu Twoim zadaniem będzie napisanie testów e2e dla listy zadań i otestowanie nowej funkcjonalności.
 
-Abyś oswoił się z testami e2e, przykład testów dla generatora list.
-http://localhost:3000/#/example
+W ramach oswajania się z testami e2e, zapoznaj się z przykładami testów dla generatora list. `http://localhost:3000/#/example`
 
-gulp protractor -> uruchamia testy e2e
+    gulp protractor // uruchamia testy e2e
 
 Lista zadań
 -----------
 **Przeanalizuj testy** dla http://localhost:3000/#/example
-* Zwróć szczególna uwagę na matchers.js.
 
-**Napisz testy sprawdzające:** dla http://localhost:3000/#/checklist
-* Poprawnie dodawanie zadań.
-* Poprawne czyszczenie listy wykonanych zadań.
-* Zaznaczanie zadania jako wykonane.
-* Dodanie odpowiedniej klasy dla tekstu - kiedy zadanie jest wykonany.
+Zwróć szczególna uwagę na matchers.js.
 
-**Stwórz nową funkcjonalność, a na następnie odpowiednio przetestuj:**
-* Jako użytkownik chcę możliwość wyboru typu zadania z work, home, private.
-* Jako użytkownik chcę mieć możliwość filtrowania zadań po typie.
-* Chcę aby na liście zadań pojawiłą się rozróżnienie na typy -> mock.jpg
+**Napisz testy sprawdzające:** dla `http://localhost:3000/#/checklist`
+
+- Poprawne dodawanie zadań.
+- Zaznaczanie zadania jako wykonane.
+- Dodanie odpowiedniej klasy dla tekstu - kiedy zadanie jest wykonane.
+- Poprawne czyszczenie listy wykonanych zadań.
+
+**Stwórz nową funkcjonalność razem z testami**
+
+- Możliwość wyboru typu zadania z `['work', 'home', 'private']`.
+- Możliwość filtrowania zadań po typie.
+- Pakaż informację o typie zadania -> mock.jpg
 
 
 
