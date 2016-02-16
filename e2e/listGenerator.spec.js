@@ -29,7 +29,7 @@ describe('List generator', function () {
 
     generator.generate();
 
-    expect(generator.generatedItems.first()).hasClass('first');
+    expect(generator.generatedItems.first()).toHaveClass('first');
   });
 
 });

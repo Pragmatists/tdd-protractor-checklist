@@ -3,9 +3,9 @@ angular.module('tdd')
 
         var vm = this;
         vm.list = [
-            {name : 'Clean the dishesh', isDone : false},
-            {name : 'Go to work.', isDone : false},
-            {name : 'Do things.', isDone : true}
+            //{name : 'Clean the dishesh', isDone : false},
+            //{name : 'Go to work.', isDone : false},
+            //{name : 'Do things.', isDone : true}
         ];
 
         vm.addTask = addTask;

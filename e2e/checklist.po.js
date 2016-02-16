@@ -5,6 +5,7 @@ module.exports = function checklistPage() {
   page.pageTitle = pageTitle;
   page.addTask = addTask;
   page.tasks = tasks;
+  page.toggleDoneCheckboxOfTask = toggleDoneCheckboxOfTask;
 
   return page;
 
@@ -23,6 +24,10 @@ module.exports = function checklistPage() {
 
   function tasks() {
     return $('.checklist').$('ul').$$('li');
+  }
+
+  function toggleDoneCheckboxOfTask(taskIndex) {
+    page.tasks().$$('input[type=checkbox]').get(taskIndex).click();
   }
 
 }();
