@@ -6,6 +6,7 @@ module.exports = function checklistPage() {
   page.addTask = addTask;
   page.tasks = tasks;
   page.toggleDoneCheckboxOfTask = toggleDoneCheckboxOfTask;
+  page.cleanDoneTasks = cleanDoneTasks;
 
   return page;
 
@@ -18,8 +19,8 @@ module.exports = function checklistPage() {
   }
 
   function addTask(taskName) {
-    $('#name').sendKeys(taskName);
-    $('button[type=submit]').click();
+    $('#name').clear().sendKeys(taskName);
+    $('.generator').click();
   }
 
   function tasks() {
@@ -28,6 +29,10 @@ module.exports = function checklistPage() {
 
   function toggleDoneCheckboxOfTask(taskIndex) {
     page.tasks().$$('input[type=checkbox]').get(taskIndex).click();
+  }
+
+  function cleanDoneTasks() {
+    $('.clear').click();
   }
 
 }();

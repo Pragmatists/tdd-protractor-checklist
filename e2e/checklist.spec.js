@@ -1,11 +1,7 @@
-//- Poprawne czyszczenie listy wykonanych zadań.
-
 describe('Checklist', function () {
 
   var matchers
     , checklist;
-
-  var NUMBER_OF_TASKS_AT_INIT = 3;
 
   beforeEach(function () {
     matchers = require('./matchers.js');
@@ -40,6 +36,17 @@ describe('Checklist', function () {
     checklist.toggleDoneCheckboxOfTask(0);
 
     expect(checklist.tasks().first().$('.name').getCssValue('text-decoration')).toBe('line-through');
+  });
+
+  it('removes done tasks', function () {
+    checklist.addTask('first task');
+    checklist.addTask('second task');
+
+    checklist.toggleDoneCheckboxOfTask(0);
+    checklist.cleanDoneTasks();
+
+    expect(checklist.tasks().count()).toBe(1);
+    expect(checklist.tasks().first().getText()).toBe('second task');
   });
 
 });
