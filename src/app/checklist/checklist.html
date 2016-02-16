@@ -1,23 +1,53 @@
 <div class="container">
-    <h1>Checklist</h1>
 
-    <form class="form-signin">
-        <input ng-model="checklist.name" type="text" id="name" class="form-control" placeholder="Name of Your task" required=""
-               autofocus="">
-        <button class="btn btn-lg btn-primary btn-block generator" type="submit"
-                ng-click="checklist.addTask(checklist.name)">Add task
-        </button>
-    </form>
+  <h1>
+    Checklist
+  </h1>
 
-    <div class="checklist" ng-if="checklist.list">
-        <h3>Tasks list:</h3>
-        <ul class="list-group">
-            <li ng-repeat="item in checklist.list" class="list-group-item">
-                <span class="name" ng-class="{'done': item.isDone}">{{item.name}}</span>
-                <input type="checkbox" ng-model="item.isDone">
-            </li>
-        </ul>
-    </div>
-    <button class="btn btn-lg btn-primary btn-block clear" ng-click="checklist.clearDone()">Clean done
+  <form class="form-signin">
+
+    <input ng-model="checklist.name"
+           type="text"
+           id="name"
+           class="form-control"
+           placeholder="Name of Your task"
+           required=""
+           autofocus="">
+
+    <button class="btn btn-lg btn-primary btn-block generator"
+            type="submit"
+            ng-click="checklist.addTask(checklist.name)">
+      Add task
     </button>
+
+  </form>
+
+  <div class="checklist" ng-if="checklist.list">
+
+    <h3>
+      Tasks list:
+    </h3>
+
+    <ul class="list-group">
+      <li ng-repeat="item in checklist.list"
+          class="list-group-item">
+
+        <span class="name"
+              ng-class="{'done': item.isDone}">
+          {{item.name}}
+        </span>
+
+        <input type="checkbox"
+               ng-model="item.isDone">
+
+      </li>
+    </ul>
+
+  </div>
+
+  <button class="btn btn-lg btn-primary btn-block clear"
+          ng-click="checklist.clearDone()">
+    Clean done
+  </button>
+
 </div>
