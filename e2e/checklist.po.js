@@ -1,14 +1,11 @@
-module.exports = function checklistPage() {
-  var page = {};
+var ChecklistPage = function () {
 
-  page.open = open;
-  page.pageTitle = pageTitle;
-  page.addTask = addTask;
-  page.tasks = tasks;
-  page.toggleDoneCheckboxOfTask = toggleDoneCheckboxOfTask;
-  page.cleanDoneTasks = cleanDoneTasks;
-
-  return page;
+  this.open = open;
+  this.pageTitle = pageTitle;
+  this.addTask = addTask;
+  this.tasks = tasks;
+  this.toggleDoneCheckboxOfTask = toggleDoneCheckboxOfTask;
+  this.cleanDoneTasks = cleanDoneTasks;
 
   function open() {
     browser.get('/#/checklist')
@@ -28,11 +25,13 @@ module.exports = function checklistPage() {
   }
 
   function toggleDoneCheckboxOfTask(taskIndex) {
-    page.tasks().$$('input[type=checkbox]').get(taskIndex).click();
+    this.tasks().$$('input[type=checkbox]').get(taskIndex).click();
   }
 
   function cleanDoneTasks() {
     $('.clear').click();
   }
 
-}();
+};
+
+module.exports = new ChecklistPage();
