@@ -24,6 +24,15 @@ describe('Checklist', function () {
     expect(checklist.tasks().first().getText()).toBe('tiny task');
   });
 
+  it('adds another task', function () {
+    checklist.addTask('first task');
+    checklist.addTask('second task');
+
+    expect(checklist.tasks().count()).toBe(2);
+    expect(checklist.tasks().first().getText()).toBe('first task');
+    expect(checklist.tasks().last().getText()).toBe('second task');
+  });
+
   it('does not mark task as done by default', function () {
     checklist.addTask('task');
 
