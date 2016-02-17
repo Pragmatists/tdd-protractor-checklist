@@ -13,7 +13,7 @@ describe('Checklist', function () {
     expect(checklist.pageTitle().getText()).toBe('Checklist');
   });
 
-  it('has some tasks at init', function () {
+  it('has no task at init', function () {
     expect(checklist.tasks().count()).toBe(0);
   });
 
