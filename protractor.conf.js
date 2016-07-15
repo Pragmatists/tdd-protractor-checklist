@@ -13,6 +13,8 @@ exports.config = {
     'browserName': 'chrome'
   },
 
+  framework : 'jasmine2',
+
   baseUrl: 'http://localhost:3000',
 
   // Spec patterns are relative to the current working directory when

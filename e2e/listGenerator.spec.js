@@ -1,10 +1,10 @@
 'use strict';
 
 describe('List generator', function () {
-  var generator, matchers;
+  var generator;
 
   beforeEach(function () {
-    matchers = require('./matchers.js');
+    require('protractor-helpers');
     generator = require('./listGenerator.po.js');
     generator.open();
   });
@@ -29,7 +29,7 @@ describe('List generator', function () {
 
     generator.generate();
 
-    expect(generator.generatedItems.first()).hasClass('first');
+    expect(generator.generatedItems.first()).toHaveClass('first');
   });
 
 });
