@@ -1,7 +1,7 @@
 Protractor checklist
 ================
 
-Kod do ćwiczeń z testami e2e.
+Code for exercises with e2e tests. 
 
 setup
 -----
@@ -18,33 +18,32 @@ Some of most useful commands are:
 * `gulp protractor` - run end-to-end tests
 * `gulp serve` - serve app in a browser and watch for changes
 
-Ćwiczenie
------
+Exercise
+--------
 
-W tym ćwiczeniu Twoim zadaniem będzie napisanie testów e2e dla listy zadań i otestowanie nowej funkcjonalności.
+Your task is to write e2e tests for a list of tasks and test them. 
+AS a starting point you can take a look at example for list generator available at `http://localhost:3000/#/example` 
 
-W ramach oswajania się z testami e2e, zapoznaj się z przykładami testów dla generatora list. `http://localhost:3000/#/example`
+    gulp protractor // run e2e tests
 
-    gulp protractor // uruchamia testy e2e
+Task list
+---------
+**Analyze tests** for http://localhost:3000/#/example
 
-Lista zadań
------------
-**Przeanalizuj testy** dla http://localhost:3000/#/example
+Pay special attention to the `matchers.js`.
 
-Zwróć szczególna uwagę na matchers.js.
+**Write verification tests:** for `http://localhost:3000/#/checklist`
 
-**Napisz testy sprawdzające:** dla `http://localhost:3000/#/checklist`
+- Correct task addition.  
+- Marking task as completed. 
+- Adding correct class for text - when task is completed. 
+- Correct clean up of completed tasks on task list. 
 
-- Poprawne dodawanie zadań.
-- Zaznaczanie zadania jako wykonane.
-- Dodanie odpowiedniej klasy dla tekstu - kiedy zadanie jest wykonane.
-- Poprawne czyszczenie listy wykonanych zadań.
+**Create new functionality with tests**
 
-**Stwórz nową funkcjonalność razem z testami**
-
-- Możliwość wyboru typu zadania z `['work', 'home', 'private']`.
-- Możliwość filtrowania zadań po typie.
-- Pakaż informację o typie zadania -> mock.jpg
+- Ability to choose task type `['work', 'home', 'private']`.
+- Ability to filter tasks by type.
+- Show information about task type -> mock.jpg
 
 
 
